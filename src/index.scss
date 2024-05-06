@@ -1,0 +1,15 @@
+$primary-color: #012301;
+$secondary-color: #ffff;
+$text-color: #000000;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $primary-color;
+  margin: 0px;
+  padding: 1.2rem;
+}
+
+.container {
+  background: $secondary-color;
+  max-width: 100rem;
+}
