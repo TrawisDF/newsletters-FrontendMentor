@@ -1,13 +1,142 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #012301;
   margin: 0px;
-  padding: 1.2rem;
+  padding: 0px;
+  background: #b2b2b2;
+  color: #323232;
+}
+
+p {
+  color: #323232;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+button {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  width: 100%;
+  color: whitesmoke;
+  background: #2f2c4b;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #f6184c, #e47f0b);
+  z-index: -1;
+  transition: opacity 0.5s;
+  border-radius: 0.6rem;
+  opacity: 0;
+}
+
+button:hover::before {
+  opacity: 1;
+}
+
+input {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  border: 1px solid #787878;
+}
+
+input.error {
+  color: rgb(255, 51, 51);
+  background: rgb(251, 215, 215);
+  border: 1px solid rgb(255, 51, 51);
+}
+
+.main-page {
+  height: 100vh;
+}
+
+.subscribe-info {
+  padding: 3rem 2.5rem;
 }
 
 .container {
-  background: white;
-  max-width: 100rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background: #f4f4f4;
+  border-radius: 1.2rem;
+  justify-content: space-between;
+  box-shadow: 5px 10px 8px rgba(243, 170, 187, 0.1803921569);
+  backdrop-filter: blur(20px);
+}
+
+.container.info {
+  max-width: 54rem;
+  padding: 1.2rem;
+}
+
+.container.thanks {
+  max-width: 2rem;
+  padding: 3rem 4rem;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  gap: 0.8rem;
+}
+
+.form-div span {
+  font-size: 0.8rem;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 500;
+  color: #ff1717;
+}
+
+.label-error {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.head-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.thanks-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
