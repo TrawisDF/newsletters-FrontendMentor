@@ -84,15 +84,16 @@ input.error {
   background: $secondary-color;
   border-radius: 1.2rem;
   justify-content: space-between;
-  box-shadow: 5px 10px 8px #f3aabb2e;
+  box-shadow: 5px 10px 8px #584e517d;
   backdrop-filter: blur(20px);
 }
 .container.info {
   max-width: 54rem;
   padding: 1.2rem;
 }
+
 .container.thanks {
-  max-width: 2rem;
+  max-width: 21rem;
   padding: 3rem 4rem;
 }
 
@@ -110,7 +111,9 @@ input.error {
   font-weight: 500;
   color: $error-message-color;
 }
-
+.blank {
+  height: 0vh;
+}
 .label-error {
   display: flex;
   justify-content: space-between;
@@ -128,4 +131,26 @@ input.error {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+@media screen and (max-width: 1439px) {
+  .container {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+  .container.info {
+    max-width: 375px;
+    padding: 0px;
+  }
+  .container.thanks {
+    max-width: 375px;
+    padding: 0px;
+  }
+  .thanks-layout {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: 30vh;
+  }
 }

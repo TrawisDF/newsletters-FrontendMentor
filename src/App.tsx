@@ -18,7 +18,12 @@ function App() {
             <SideImage />
           </>
         )}
-        {shown === 'thanks' && <Thanks email={email} setShown={setShown} />}
+        {shown === 'thanks' && (
+          <>
+            <div className='blank'></div>
+            <Thanks email={email} setShown={setShown} />
+          </>
+        )}
       </Container>
     </div>
   );

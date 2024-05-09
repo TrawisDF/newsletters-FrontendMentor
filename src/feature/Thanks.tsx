@@ -10,12 +10,14 @@ type ThanksProps = {
 export default function Thanks({ email, setShown }: ThanksProps) {
   return (
     <div className='thanks-layout'>
-      <ThanksIcon />
-      <Heading>Thank For Subscribing!</Heading>
-      <p>
-        A confirmation email has been sent to <strong>{email}</strong>. Please
-        open it and click the button inside to confirm your subscription.
-      </p>
+      <div>
+        <ThanksIcon />
+        <Heading>Thank For Subscribing!</Heading>
+        <p>
+          A confirmation email has been sent to <strong>{email}</strong>. Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
       <Button onClick={() => setShown('info')}>Dismiss Message</Button>
     </div>
   );
